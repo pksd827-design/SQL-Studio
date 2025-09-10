@@ -1,0 +1,5 @@
+{
+  "name": "SQL Studio",
+  "description": "A modern, professional, and responsive web application for developers and data analysts to write and run SQL queries in the browser, powered by AI for natural language query generation.",
+  "requestFramePermissions": []
+}
