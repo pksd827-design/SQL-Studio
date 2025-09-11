@@ -72,7 +72,7 @@ const NewTableModal: React.FC<NewTableModalProps> = ({ isOpen, onClose, onCreate
   };
 
   return (
-    <Modal isOpen={isOpen} onClose={handleClose} className="max-w-5xl">
+    <Modal isOpen={isOpen} onClose={handleClose} className="max-w-md md:max-w-5xl">
       <div className="p-6">
         <h2 className="text-2xl font-bold text-white mb-4">New Table from Data</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

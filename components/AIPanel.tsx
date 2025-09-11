@@ -43,7 +43,7 @@ const AIPanel: React.FC<AIPanelProps> = ({ onSqlGenerated, schema }) => {
       <label htmlFor="ai-prompt" className="block text-sm font-medium text-slate-400 mb-2">
         Generate SQL from Natural Language
       </label>
-      <div className="flex space-x-2">
+      <div className="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2">
         <input
           id="ai-prompt"
           type="text"

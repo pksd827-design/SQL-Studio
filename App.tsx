@@ -113,7 +113,7 @@ function App() {
     <div className="flex flex-col h-screen bg-slate-900 text-slate-300">
       <Header username={username} onNewTableClick={() => setShowNewTableModal(true)} />
 
-      <main className="flex-grow flex overflow-hidden">
+      <main className="flex-grow flex flex-col md:flex-row overflow-hidden">
         <SchemaSidebar 
             schema={schema} 
             onDeleteTable={handleDeleteTable}
@@ -123,7 +123,7 @@ function App() {
         <div className="flex-grow flex flex-col p-4 space-y-4 overflow-y-auto">
           <AIPanel onSqlGenerated={handleSqlGenerated} schema={schema} />
           
-          <div className="flex flex-col h-1/2 min-h-0">
+          <div className="flex flex-col min-h-[300px] md:h-1/2 md:min-h-0">
             <SqlEditor
               schema={schema}
               value={sqlQuery}
@@ -133,7 +133,7 @@ function App() {
             />
           </div>
 
-          <div className="flex flex-col h-1/2 min-h-0">
+          <div className="flex flex-col min-h-[300px] md:h-1/2 md:min-h-0">
             <ResultsPane
               status={queryStatus}
               result={queryResult}
